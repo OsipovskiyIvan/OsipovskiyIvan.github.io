@@ -429,7 +429,6 @@ body {
 
 @media (max-width:756px) {
     .contacts__wrapper{
-    
         flex-direction: column;
     }
 }
@@ -475,6 +474,9 @@ body {
     width: 100%;
     margin-bottom: 10px;
 }
+.footer__wrapper *{
+    color: #ffffff;
+}
 .contacts__icon__wrapper{
     display: flex;
     align-items: flex-start;
@@ -508,6 +510,28 @@ body {
     gap: 30px;
     display: flex;
     justify-content: space-between;
+}
+@media (max-width:600px) {
+    .footer__wrapper{
+        gap: 12px;
+    }
+}
+@media (max-width:500px) {
+    .footer__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:350px) {
+    .footer__wrapper{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .footer__wrapper *{
+        text-align: center;
+    }
 }
 .footer__info{
     display: flex;
