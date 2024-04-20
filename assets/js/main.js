@@ -125,3 +125,20 @@ cross.addEventListener('click', () => {
 //   burger.classList.toggle('');
 //   mobile_menu.classList.toggle('');
 // });
+
+const cart_open = document.querySelector('.cart_open');
+const cart = document.querySelector('.cart');
+var cross2 = document.querySelector('.cart_cross');
+
+
+cart_open.addEventListener('click', () => {
+  // Toggle the "active" class for the parent element with the "burger" class
+  cart_open.classList.toggle('active');
+  cart.classList.toggle('active');
+});
+
+cross2.addEventListener('click', () => {
+  // Toggle the "active" class for the parent element with the "cross" class
+  cart_open.classList.toggle('active');
+  cart.classList.toggle('active');
+});
